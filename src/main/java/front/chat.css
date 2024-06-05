@@ -1,0 +1,57 @@
+.messages-list{
+    list-style: none;
+    display: grid;
+}
+li{
+    color: white;
+    margin: 10px;
+    padding: 5px 20px;
+    max-width: 40%;
+    border-radius: 20px;
+}
+
+.time{
+    width: 98%;
+    display: flex;
+    justify-content: flex-end;
+    justify-self: end;
+}
+.message{
+
+    background: rgb(23, 23, 39);
+}
+.content{
+    width: 80%;
+}
+.sender{
+    color: grey;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: bold;
+}
+.message-avatar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: auto;
+    font-weight: bold;
+    font-size: 30px;
+    border: 2px solid black;
+    box-shadow: 0 0 7px white;
+    border-radius: 50%;
+    background-color: gold;
+    font-family: sans-serif;
+    margin-right: 10px;
+    text-transform: capitalize;
+}
+.other{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+.own{
+    display: flex;
+    justify-self: flex-end;
+    background: rgb(23, 64, 78);
+}

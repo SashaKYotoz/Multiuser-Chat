@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/alertify.js/0.3.11/alertify.default.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/alertify.js/0.3.11/alertify.core.css">
+  <style>
+        .pass {
+            position: relative;
+        }
+        #icon {
+            position: absolute;
+            cursor: pointer;
+            right: 10px;
+            top: 20px;
+            color: black;
+        }
+        #icon:hover {
+            color: gray;
+        }
+    </style>
+</head>
+
+<body class="p-4 text-bg-dark">
+<div class="form-check form-switch position-fixed top-0 end-0 me-2">
+  <input class="form-check-input" type="checkbox" role="switch" id="switch">
+  <label class="form-check-label" for="switch">Switch theme</label>
+</div>
+<div class="container d-flex flex-column align-items-center">
+  <a href="index.html" class="btn btn-primary">Go to main page</a>
+
+  <h1 class="my-5">Sign in</h1>
+
+  <form class="col-3 mx-auto" id="login-form">
+    <input type="text" class="form-control mb-3" placeholder="Enter login" id="username" name="username">
+    <div class="pass">
+      <input type="password" class="form-control mb-3" placeholder="Enter password" id="pass" name="pass">
+      <i class="fa-regular fa-eye fa-lg" id="icon"></i>
+    </div>
+
+    <p>Don`t have an account? <a href="register.html">To register</a></p>
+    <div class="d-flex justify-content-between">
+      <button type="submit" class="btn btn-outline-success w-100" id="login">Login</button>
+    </div>
+  </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/alertify.js/0.3.11/alertify.min.js"></script>
+<script src="script.js"></script>
+<script src="connect.js"></script>
+<script src="login_script.js"></script>
+<script src="theme.js"></script>
+</body>
+
+</html>
